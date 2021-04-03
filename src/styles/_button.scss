@@ -1,0 +1,33 @@
+%btn {
+  display: inline;
+  border-radius: 5px;
+  margin: 3px;
+  color: $white-color;
+  padding: 4px 8px;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $primary-color;
+}
+
+.btn-danger {
+  @extend %btn;
+  background-color: $danger-color;
+}
+
+.btn-dark {
+  @extend %btn;
+  background-color: $dark-color;
+}
+
+.btn-success {
+  @extend %btn;
+  background-color: $success-color;
+}

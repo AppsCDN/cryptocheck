@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+// vars
+$primary-color: #0967af;
+$secondary-color: #692a07;
+$dark-color: #282016;
+$light-color: #e2e2e2;
+$white-color: #fff;
+$danger-color: #ff534b;
+$success-color: #006400;
+$background-color: $light-color;
+$text-color: $dark-color;
+$grey-color: #5e5858;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+body {
+  background-color: $white-color;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Shippori Mincho B1', serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+@import './utils.scss';
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,100 @@
+@import './../../../styles/style.scss';
+@import './../../../styles/button';
+
+.home {
+  .cards-counter {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: $grey-color;
+  }
+  .small-input {
+    padding: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+
+    label {
+      padding-right: 10px;
+    }
+
+    input {
+      width: 200px;
+      padding: 3px 5px;
+      border-radius: 5px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 3px 5px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .cards {
+    color: $grey-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+      min-width: 250px;
+      min-height: 250px;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 5px 1px 10px #aaaaaa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:hover {
+        transform: scale(0.97);
+      }
+
+      .card-title {
+        display: flex;
+        justify-content: center;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+      }
+
+      .card-header {
+        margin-bottom: 10px;
+      }
+
+      .card-content {
+        display: inline;
+        margin-bottom: 10px;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          margin-left: 10px;
+          border-radius: 5px;
+          color: $primary-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .candlestick-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-top: 1px solid $dark-color;
+    border-bottom: 1px solid $dark-color;
+  }
+}

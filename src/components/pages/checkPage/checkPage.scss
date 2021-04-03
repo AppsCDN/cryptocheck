@@ -1,0 +1,269 @@
+@import '../../../styles/style.scss';
+
+.check-page {
+  color: $grey-color;
+  padding: 1rem;
+
+  .coin-check-trade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .card-list {
+      list-style-type: none;
+      margin: 10px;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      // background-color: gainsboro;
+
+      .card {
+        border: 1px solid $grey-color;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+
+        .card-header {
+          flex-direction: column;
+          border-bottom: 1px solid $grey-color;
+        }
+        .card-content {
+          div:nth-of-type(2) {
+            // border-top: 1px solid $grey-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $dark-color;
+            font-size: 0.8rem;
+
+            p {
+              padding: 2px;
+              border: 1px solid $grey-color;
+              font-weight: bold;
+              margin: 0 2px;
+            }
+          }
+        }
+
+        .card-footer {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .prices-calculations {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .check-price-count-qty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      margin-right: 1rem;
+      padding: 10px;
+      border: 1px solid $grey-color;
+      margin: 10px;
+      h1 {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+
+      .check-price-form {
+        align-items: center;
+        width: 100%;
+
+        div {
+          margin: 10px 0px;
+        }
+      }
+
+      .price {
+        font-size: 18px;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .current-assets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+
+    p {
+      width: 200px;
+      margin-right: 10px;
+      text-align: center;
+      border: 1px solid $grey-color;
+      margin-top: 5px;
+      padding: 5px;
+      color: $dark-color;
+    }
+  }
+
+  // utils
+  .medium-input {
+    display: flex;
+
+    label {
+      margin-right: 20px;
+    }
+
+    input {
+      padding: 3px 5px;
+      border-radius: 5px;
+      width: 150px;
+    }
+  }
+  .small-input {
+    display: flex;
+
+    label {
+      margin-right: 20px;
+    }
+
+    input {
+      padding: 3px 5px;
+      border-radius: 5px;
+      width: 75px;
+    }
+  }
+
+  .border {
+    margin-top: 5px;
+    border: 1px solid $grey-color;
+    padding: 3px;
+  }
+
+  .border-top {
+    border-top: 1px solid $grey-color;
+  }
+
+  .width200 {
+    width: 200px;
+    text-align: center;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .base {
+    font-weight: bold;
+    color: $secondary-color;
+  }
+
+  .collective {
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  .text-color-dark {
+    color: $dark-color;
+  }
+
+  .top-line {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid $grey-color;
+  }
+
+  .success-color {
+    color: $success-color;
+  }
+
+  .green-color {
+    color: green;
+  }
+
+  .danger-color {
+    color: $danger-color;
+  }
+
+  .primary-color {
+    color: $primary-color;
+  }
+
+  .white-color {
+    color: $white-color;
+  }
+
+  .gold-color {
+    color: orange;
+  }
+
+  .dark-color {
+    color: $dark-color;
+  }
+
+  .bg-danger {
+    background-color: $danger-color;
+    color: $white-color;
+    padding: 3px;
+    text-align: center;
+  }
+
+  .bg-success {
+    background-color: $success-color;
+    color: $white-color;
+    padding: 3px;
+    text-align: center;
+  }
+  .bg-dark {
+    background-color: $dark-color;
+    color: $white-color;
+    padding: 3px;
+    text-align: center;
+  }
+
+  .bg-light {
+    background-color: $light-color;
+    color: $dark-color;
+    padding: 3px;
+    text-align: center;
+  }
+
+  .font-bold {
+    font-weight: bold;
+  }
+
+  .small-font {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .small-font-10 {
+    font-size: 10px;
+  }
+
+  .counter-averages {
+    // text-align: center;
+
+    span {
+      padding-right: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .check-page {
+    padding: 0rem;
+    flex-direction: column;
+  }
+}
