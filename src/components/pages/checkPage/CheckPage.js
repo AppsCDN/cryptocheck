@@ -14,7 +14,7 @@ function CheckPage() {
   return (
     <div className='check-page'>
       <CheckPrice />
-      <hr />
+      {/* <hr /> */}
       <CoinCheckTrade />
     </div>
   );

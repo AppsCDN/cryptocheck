@@ -25,3 +25,17 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     }
   }
 }
+
+//
+
+.scale-90 {
+  transform: scale(0.9);
+}
+
+.badge {
+  background-color: $primary-color;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+}

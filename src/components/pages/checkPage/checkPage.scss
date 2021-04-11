@@ -98,14 +98,15 @@
     padding: 10px;
     margin: 10px;
 
-    p {
+    button {
       width: 200px;
       margin-right: 10px;
       text-align: center;
-      border: 1px solid $grey-color;
       margin-top: 5px;
-      padding: 5px;
-      color: $dark-color;
+      padding: 8px 12px;
+      opacity: 0.85;
+      box-shadow: 3px 3px 4px #888888;
+      // color: $dark-color;
     }
   }
 
@@ -221,6 +222,13 @@
 
   .bg-success {
     background-color: $success-color;
+    color: $white-color;
+    padding: 3px;
+    text-align: center;
+  }
+
+  .bg-primary {
+    background-color: $primary-color;
     color: $white-color;
     padding: 3px;
     text-align: center;

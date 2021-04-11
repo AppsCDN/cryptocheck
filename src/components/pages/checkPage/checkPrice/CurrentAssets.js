@@ -1,3 +1,4 @@
+import { queryByAttribute } from '@testing-library/dom';
 import React, { useContext } from 'react';
 import { TickersContext } from '../../../context/TickersContext';
 
@@ -38,22 +39,24 @@ function CurrentAssets() {
   };
   return (
     <div>
-      <p className='font-bold pt-10 text-center'>
-        Favorite assets
-        {storageTickers && storageTickers.length}
+      <p className='pt-10 text-center'>
+        <span className='p-r-5'>Favorite assets</span>{' '}
+        <span className='badge'>{storageTickers && storageTickers.length}</span>
       </p>
       <div className='small-font current-assets'>
         {storageTickers &&
           storageTickers.map((item) => (
-            <p
-              className={`cursor-pointer ${
-                item.selected ? 'bg-success' : 'bg-light'
+            <button
+              // style={{ color: '#fff' }
+              className={`btn-primary  cursor-pointer ${
+                item.selected ? 'bg-primary' : 'bg-dark scale-90'
               }`}
               key={item.symbol}
               onClick={() => selectTicker(item)}
             >
+              {item.selected ? 'Close ' : 'Open '}
               {item.symbol}
-            </p>
+            </button>
           ))}
       </div>
     </div>
